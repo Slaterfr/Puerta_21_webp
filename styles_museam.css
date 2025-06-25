@@ -1,0 +1,60 @@
+header{
+    background-color: darkgoldenrod;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+} 
+h1{
+    justify-self: center;
+}
+body{
+    background-color: lightgray;
+}
+#seccion_obras {
+    border-radius: 20px;
+    border-style: double;
+    border-color: gray;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+    padding: 10px;
+}
+.obras {
+    text-align: center;
+    box-shadow: 2px 2px 8px black;
+}
+.img_obras{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+#logo_header{
+    max-width: 10%;
+    max-height: auto;
+    margin-right: 30%;
+}
+
+
+
+footer{
+    background-color: darkgoldenrod;
+    padding-top: 15px;
+}
+@media (max-width: 768px) {
+    #seccion_obras {
+        grid-template-columns: 1fr; /* 1 imagen por línea en pantallas pequeñas */
+    }
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    #logo_header {
+        max-width: 30%;
+        margin: 0 auto;
+    }
+}
+
